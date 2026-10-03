@@ -1,0 +1,2 @@
+﻿dataset,target_category,setting,seed,checkpoint,source_training_dataset,source_class_id,source_class_name,map50,map50_95
+SMOKE_dataset,smoke,zero-shot,0,cnr_seed0_best.pt,M4SFWD,1,smoke,78.3,46.5

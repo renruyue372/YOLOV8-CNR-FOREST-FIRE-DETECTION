@@ -1,0 +1,6 @@
+# train  prefixes=['1', '2']  images=2803
+
+# valid  prefixes=['3']  images=569
+
+# test  prefixes=['4']  images=602
+

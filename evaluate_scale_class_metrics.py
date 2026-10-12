@@ -22,7 +22,7 @@ from ultralytics import YOLO
 
 # ------------------------- User configuration -------------------------
 # IMPORTANT: replace MODEL_PATH with the checkpoint that you actually want to evaluate.
-MODEL_PATH = (r"D:\fjx\ultralyticsPro0401-YOLOv8\rynew\train97\weights\best.pt"
+MODEL_PATH = (r"D:\fjx\ultralyticsPro0401-YOLOv8\rynew\train\weights\best.pt"
               r"")
 DATA_YAML = r"D:\fjx\ultralyticsPro0401-YOLOv8\M4SFWD Dataset New\data.yaml"
 

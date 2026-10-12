@@ -10,6 +10,7 @@ Recommended environment:
 - PyTorch 2.0.1
 - CUDA 11.7
 - NVIDIA GPU
+- Ultralytics 8.1.0
 
 Install dependencies:
 
@@ -17,8 +18,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-This repository contains a modified local Ultralytics implementation. Please use the source code included in this repository rather than replacing it with a different Ultralytics version.
-
+The custom modules and model configuration required for YOLOv8-CNR are provided in this repository.
 ## 2. M4SFWD split
 
 The reported M4SFWD experiments use the exact camera-run-level split below:
@@ -32,7 +32,6 @@ The three subsets are run-level exclusive. Scene 4 is completely held out from t
 Split files:
 
 ```text
-splits/
 ├── train.txt
 ├── val.txt
 ├── test.txt
@@ -85,7 +84,6 @@ python evaluate_scale_class_metrics.py
 ## 5. Released checkpoints
 
 ```text
-weights/
 ├── v8_seed0_best.pt
 ├── v8_seed42_best.pt
 ├── v8_seed123_best.pt
@@ -124,7 +122,6 @@ The released baseline and YOLOv8-CNR per-seed evaluation outputs contain the cla
 ### Table 5: Real-world retraining and zero-shot transfer
 
 ```text
-results/table5_cross_dataset/
 ├── table5_retrained_per_seed.csv
 ├── smoke_zero_shot.csv
 ├── flame_zero_shot.csv
@@ -154,7 +151,6 @@ python zero_shot_eval.py --weights weights/cnr_seed0_best.pt --data <target_data
 ### Table 6: Scale-stratified evaluation
 
 ```text
-results/table6_scale/
 ├── v8_seed0_scale_ap_metrics.csv
 ├── v8_seed42_scale_ap_metrics.csv
 ├── v8_seed123_scale_ap_metrics.csv

@@ -99,7 +99,7 @@ Seeds used in the manuscript: `0`, `42`, and `123`.
 ### Table 2: Ablation study
 
 ```text
-results/table2_ablation/table2_per_seed.csv
+table2_per_seed.csv
 ```
 
 This file contains the three-seed results for:
@@ -131,7 +131,7 @@ The released baseline and YOLOv8-CNR per-seed evaluation outputs contain the cla
 The zero-shot experiments use:
 
 ```text
-weights/cnr_seed0_best.pt
+CNR_seed0_best.pt
 ```
 
 This checkpoint was trained only on M4SFWD with seed 0 and was directly evaluated on the real-world datasets without fine-tuning.
@@ -144,8 +144,8 @@ Zero-shot class mapping:
 Zero-shot evaluation:
 
 ```bash
-python zero_shot_eval.py --weights weights/cnr_seed0_best.pt --data <target_data.yaml> --target smoke --seed 0
-python zero_shot_eval.py --weights weights/cnr_seed0_best.pt --data <target_data.yaml> --target flame --seed 0
+python zero_shot_eval.py --weights CNR_seed0_best.pt --data <target_data.yaml> --target smoke --seed 0
+python zero_shot_eval.py --weights CNR_seed0_best.pt --data <target_data.yaml> --target flame --seed 0
 ```
 
 ### Table 6: Scale-stratified evaluation
@@ -178,7 +178,7 @@ p = 0.0025
 
 ## 8. Notes
 
-- All reported M4SFWD results use the split released in `splits/`.
+- All reported M4SFWD results use the released train.txt, val.txt, and test.txt split files.
 - The M4SFWD test set is a Scene-4-held-out test set.
 - Zero-shot results are single-run results and are treated as preliminary cross-domain transfer evidence.
 - Please use the released model configuration, source code, checkpoints, and split files together when reproducing the results.

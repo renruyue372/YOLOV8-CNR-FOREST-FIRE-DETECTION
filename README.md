@@ -87,9 +87,9 @@ python evaluate_scale_class_metrics.py
 ├── v8_seed0_best.pt
 ├── v8_seed42_best.pt
 ├── v8_seed123_best.pt
-├── cnr_seed0_best.pt
-├── cnr_seed42_best.pt
-└── cnr_seed123_best.pt
+├── CNR_seed0_best.pt
+├── CNR_seed42_best.pt
+└── CNR_seed123_best.pt
 ```
 
 Seeds used in the manuscript: `0`, `42`, and `123`.
